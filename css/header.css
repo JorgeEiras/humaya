@@ -1,0 +1,111 @@
+#header{
+    background-image: url(/img/imagenCentral.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+}
+
+#header nav{
+    display: flex;
+    align-items: center;
+    height: 11vh;
+    background-color: rgba(0, 0, 0, .23);
+}
+
+#header nav ul{
+    display: flex;
+    list-style: none;
+    flex-grow: 1;
+    padding: 0;
+    align-items: center;
+}
+
+#header nav ul a{
+    text-decoration: none;
+    display: block;
+    color: white;
+    transition: all 0.3s;
+    border-radius: 10px;
+    font-size: clamp(1.2rem, 2vw, 2.3rem); 
+    padding: 15px;
+}
+
+#header nav ul a:hover{
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+#header img{
+    margin: 0 20px 0 0; 
+    border-radius: 10px;
+}
+
+#header img:hover{
+    background-color: rgba(0, 0, 0, 0.2)
+}
+
+#header div{
+    width: 450px;
+    height: 300px;
+    background-color: rgba(0, 0, 0, .5);
+    border-radius: 10px;
+    color: white;
+    align-self: flex-end;
+    position: absolute;
+    margin: 280px 60px 0 0;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center; 
+}
+
+#header div h1{
+    
+    color: white;
+    padding-top: 20px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+
+#header div a{
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    padding: 10px 20px;
+    border-radius: 50px;
+    background-color: rgba(0, 0, 0, 0.2);
+    color: white;
+    margin-bottom: 20px;
+}
+
+#header div a:hover, a:active{      
+    background-color: rgba(0, 0, 0, 0.6);
+    
+}
+
+#header div p{      
+    text-align: center;
+    margin: auto;
+    padding-bottom: 10px;
+    
+}
+
+
+@media screen and (min-width: 768px) {
+    #header div{
+        width: 500px;
+        margin: 320px 60px 0 0;
+    }    
+}
+
+@media screen and (min-width: 1200px) {
+    #header div{
+        width: 600px;
+        margin: 380px 60px 0 0;
+    }      
+    
+}

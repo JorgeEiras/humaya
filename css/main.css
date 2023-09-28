@@ -1,0 +1,154 @@
+#main{
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+}
+
+#main .row-colum{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex: 100%;
+    background-color: black;
+    color:var(--color-primary);
+    height: 22.5%;
+}
+
+#main .row-colum img{
+    width: 100%;
+    height: auto;
+}
+
+#main .row-colum .object{
+    flex: 100%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;   
+}
+
+#main .row-colum .object h1{
+    padding: 0;
+    margin: 0;
+}
+
+#main .row-colum .object p{
+    padding: 0;
+    margin: 20px;
+    padding-bottom: 40px;
+}
+
+/*************************/
+
+#main .row-colum-r{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex: 100%;
+    color:var(--color-primary);
+    height: 22.5%;
+}
+
+#main .row-colum-r img{  
+    width: 100%;
+    height: auto;
+}
+
+#main .row-colum-r .object{
+    flex: 100%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(0, 0, 0);
+}
+
+#main .row-colum-r .object h1{
+    padding: 0;
+    margin: 0;
+}
+
+#main .row-colum-r .object p{
+    padding: 0;
+    margin: 20px;
+    padding-bottom: 40px;
+}
+
+#main .row-colum-r .object-r{
+    flex: 100%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    background-color: var(--color-primary);
+}
+
+/**************************/
+
+#main .separador-chico{
+    display: flex;
+    width: 100%;
+    text-align: center;
+    background-color: var(--color-secondary);
+    height: 10%;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#main .separador-chico h1{
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+
+@media only screen and (min-width: 768px){
+    #main .row-colum{
+        flex-direction: row;
+        flex: 100%;
+    }
+
+    #main .row-colum img{
+        width: 50%;
+        object-fit: cover ;
+    }
+
+    #main .row-colum .object{
+        width: 50%;
+    }
+
+    #main .row-colum-r{
+        flex-direction: row-reverse;
+        flex: 100%;
+    }
+
+    #main .row-colum-r img{
+        width: 50%;
+        object-fit: cover ;
+    }
+
+    #main .row-colum-r .object{
+        width: 50%;
+    }
+
+}
+
+@media only screen and (min-width: 1200px){
+    #main .row-colum{
+        max-height: 23.6%;
+    }
+
+    #main .row-colum-r{
+        max-height: 23.6%;
+    }
+
+    #main .separador-chico{
+        height: 20%;
+        
+    }
+
+}
+
+
+
